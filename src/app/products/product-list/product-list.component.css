@@ -1,0 +1,21 @@
+
+::ng-deep button{
+    background-color: black;
+    color: white;
+    /* padding: 10px 20px; */
+}
+
+
+.d1-flex{
+    display: flex;
+}
+
+
+.flex-parent{
+    display: flex;
+    gap: 10px;
+}
+.flex-parent > div{
+    padding: 10px;
+    border: 1px solid blue;
+}

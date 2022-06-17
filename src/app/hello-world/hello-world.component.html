@@ -1,0 +1,10 @@
+<button (click)="toggleEditable()">Toggle Editable</button>
+<p *ngIf="isEditable; then editable else nonEditable"></p>
+
+<ng-template #editable>
+    <p>Para is write mode</p>
+</ng-template>
+<ng-template #nonEditable>
+    <p>Para is readonly mode</p>
+</ng-template>
+<p [contentEditable]="isEditable">Prabhjot</p>
