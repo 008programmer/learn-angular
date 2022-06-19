@@ -14,6 +14,8 @@ import {
   ProductDetailsComponent, 
   ProductListComponent} 
   from "./products";
+import { PracComponent } from './prac/prac.component';
+import { MyPracComponent } from './my-prac/my-prac.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import {
     ProductDetailsComponent,
     CartComponent,
     TopBarComponent,
-    ShippingComponent
+    ShippingComponent,
+    PracComponent,
+    MyPracComponent
   ],
   imports: [
     BrowserModule,

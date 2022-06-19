@@ -1,0 +1,31 @@
+<!-- <form [formGroup]="form" (ngSubmit)="submit()">
+    <div>
+        <label for="firstName">First Name</label>
+        <input formControlName="firstName" id="firstName" />
+    </div>
+    <div>
+        <label for="lastName">Last Name</label>
+        <input formControlName="lastName" id="lastName" />
+    </div>
+    <div>
+        <label for="email">Email</label><input formControlName="email" id="email" />
+        <div *ngIf="emailControl.touched && emailControl.hasError('required')" class="error">
+            email is required </div>
+        <div *ngIf="emailControl.touched && emailControl.hasError('email')" class="error">
+            invalid email address </div>
+    </div>
+    <div>
+        <button>Submit</button>
+    </div>
+</form> -->
+
+<div>
+    <label for="passord"></label>
+    <input id="password" [formControl]='password' />
+    <div *ngIf="password.touched && password.hasError('minlength')" class="error">
+        min length issue </div>
+    <div *ngIf="password.touched && password.hasError('required')" class="error">
+        required </div>
+        <div *ngIf="password.touched && password.hasError('invalidPassword')" class="error">
+            Invalid Password </div>
+</div>
